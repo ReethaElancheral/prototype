@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import emailIcon from "../assets/images/mailid.png";
-import phoneIcon from "../assets/images/phone.png";
+import phoneIcon from "../assets/images/Phone.png";
 import Sidebar from "../components/Sidebar";
 
 const OnlineTraineesPage = () => {

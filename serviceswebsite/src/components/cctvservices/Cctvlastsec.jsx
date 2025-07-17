@@ -1,4 +1,4 @@
-import cctvlastimg from "../../assets/images/cctvsecimg.PNG";
+import cctvlastimg from "../../assets/images/cctvsecimg.png";
 import { Link } from "react-router-dom";
 import learnIcon from "../../assets/images/learnarrow.png";
 

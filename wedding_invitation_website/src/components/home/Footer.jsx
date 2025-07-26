@@ -8,7 +8,7 @@ import {
   FaCopyright
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import footerlogo from '../../assets/images/logofooter.PNG'
+import footerlogo from '../../assets/images/footerlogo.PNG'
 
 const Footer = () => {
   return (

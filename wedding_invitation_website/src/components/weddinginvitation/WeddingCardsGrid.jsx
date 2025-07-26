@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import weddingcard1 from '../../assets/images/hinduweddingcard.png';
-import weddingcard2 from '../../assets/images/christianweddingcard.png';
+import weddingcard2 from '../../assets/images/Christianweddingcard.png';
 import weddingcard3 from '../../assets/images/muslimweddingcard.png';
 import weddingcard4 from '../../assets/images/sikhweddingcard.png';
 import weddingcard5 from '../../assets/images/interfaithweddingcard.png';

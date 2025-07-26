@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import card1 from "../../assets/images/hindu-collection.jpg";
-import card2 from "../../assets/images/christian-collection.jpg";
-import card3 from "../../assets/images/muslim-collection.jpg";
-import card4 from "../../assets/images/interfaith-collection.jpg";
+import card1 from "../../assets/images/hindu-collection.JPG";
+import card2 from "../../assets/images/christian-collection.JPG";
+import card3 from "../../assets/images/muslim-collection.JPG";
+import card4 from "../../assets/images/interfaith-collection.JPG";
 
 const categories = [
   {

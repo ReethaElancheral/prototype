@@ -2,9 +2,9 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 
-import client1 from "../../assets/images/james.jpg";
-import client2 from "../../assets/images/harshitha.jpg";
-import client3 from "../../assets/images/santhosh.jpg";
+import client1 from "../../assets/images/james.JPG";
+import client2 from "../../assets/images/harshitha.JPG";
+import client3 from "../../assets/images/santhosh.JPG";
 
 const testimonials = [
   {

@@ -1,4 +1,4 @@
-import cardImg1 from '../../assets/images/hinducard1.png';
+import cardImg1 from '../../assets/images/hinducard1.PNG';
 import cardImg2 from '../../assets/images/hinducard2.png';
 import cardImg3 from '../../assets/images/hinducard3.png';
 import cardImg4 from '../../assets/images/hinducard4.png';

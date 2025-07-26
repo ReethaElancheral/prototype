@@ -66,26 +66,6 @@ export const WishlistCartProvider = ({ children }) => {
   localStorage.setItem("cart", JSON.stringify([]));
 };
 
-// const handleAddToWishlist = (product) => {
-// const loggedInUser = localStorage.getItem("userEmail");
-
-
-//   if (!loggedInUser) {
-//     toast.error("Please login first to add to wishlist");
-//     return false;
-//   }
-
-//   if (wishlist.some(item => item.id === product.id)) {
-//     toast("Already in wishlist");
-//     return false;
-//   }
-
-//   const updatedWishlist = [...wishlist, product];
-//   setWishlist(updatedWishlist);
-//   localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
-//   toast.success("Added to wishlist");
-//   return true;
-// };
 
 
 const handleAddToWishlist = (card, userEmail) => {

@@ -3,7 +3,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { WishlistCartContext } from "../wishlist/WishlistCartContext";
 
-import variantImg from "../../assets/images/variantcard.png";
+import variantImg from "../../assets/images/variantcard.PNG";
 
 import cards from "../data/HinduCards";
 

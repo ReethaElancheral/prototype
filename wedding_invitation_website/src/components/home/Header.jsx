@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 import React, { useState, useContext } from "react";
 import { WishlistCartContext } from "../wishlist/WishlistCartContext";
 import { SearchContext } from "../search/SearchContext.jsx";
-import logo from '../../assets/images/logonew.png'
+import logo from '../../assets/images/logonew.PNG'
 
 const navItems = [
   { name: "Home", path: "/" },

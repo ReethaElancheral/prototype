@@ -1,7 +1,7 @@
 import React from "react";
-import fimg1 from '../../assets/images/aboutus1.png'
-import fimg2 from '../../assets/images/aboutus2.png'
-import fimg3 from '../../assets/images/aboutus3.png'
+import fimg1 from '../../assets/images/aboutus1.PNG'
+import fimg2 from '../../assets/images/aboutus2.PNG'
+import fimg3 from '../../assets/images/aboutus3.PNG'
 const AboutUs = () => {
   return (
     <section className="bg-[#E6E6FA] font-poppins text-black px-6 py-12 md:px-24">

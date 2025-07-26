@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
 
-import icon1 from "../../assets/images/ordersample.jpg";
-import icon2 from "../../assets/images/sampleorder.jpg";
-import icon3 from "../../assets/images/digitaldraft.jpg";
-import icon4 from "../../assets/images/bulkorder.jpg";
-import icon5 from "../../assets/images/delivery.jpg";
+import icon1 from "../../assets/images/ordersample.JPG";
+import icon2 from "../../assets/images/sampleorder.JPG";
+import icon3 from "../../assets/images/digitaldraft.JPG";
+import icon4 from "../../assets/images/bulkorder.JPG";
+import icon5 from "../../assets/images/delivery.JPG";
 
 const steps = [
   { icon: icon1, title: "Order Sample" },

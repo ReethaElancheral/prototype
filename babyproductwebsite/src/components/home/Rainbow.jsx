@@ -1,7 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import heroImg from '../../assets/images/herobaby.png';
-import overlayImg from '../../assets/images/rain.PNG'; // replace with your file name
+import overlayImg from '../../assets/images/rain.png'; 
 
 
 export default function Rainbow() {

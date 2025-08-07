@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import allProducts from '../data/allProducts';
+import allProducts from '../data/allproducts';
 import BestSellerCard from '../home/BestSellerCard';
 
 export default function SearchResults() {

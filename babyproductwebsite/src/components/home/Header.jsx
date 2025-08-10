@@ -1,9 +1,13 @@
 
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 import { Link, NavLink,useNavigate } from 'react-router-dom';
 import { FiSearch, FiShoppingBag, FiUser, FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 import logo from '../../assets/images/logoimg.PNG';
 import { useCart } from '../context/CartContext';
+
+
+import { getCurrentUser, clearCurrentUser } from '../utils/auth';
+
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -12,6 +16,8 @@ export default function Header() {
 
       const [query, setQuery] = useState('');
   const navigate = useNavigate();
+    const [user, setUser] = useState(null);
+
    const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim()) {
@@ -19,6 +25,21 @@ export default function Header() {
       setQuery('');
     }
   };
+
+
+
+  useEffect(() => {
+    setUser(getCurrentUser());
+  }, []);
+
+ 
+
+  const handleLogout = () => {
+    clearCurrentUser();
+    setUser(null);
+    navigate('/');
+  };
+
 
   const productCategories = [
     { name: 'Pampers', path: '/products/pampers' },
@@ -122,10 +143,16 @@ export default function Header() {
 </Link>
 
 
-
-          <Link to="/profile" className="text-xl hover:text-blue-500">
-            <FiUser />
-          </Link>
+   {user ? (
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-medium">Hi, {user.name.split(' ')[0]}</span>
+              <button onClick={handleLogout} className="text-sm bg-red-500 text-white px-3 py-1 rounded">Logout</button>
+            </div>
+          ) : (
+            <Link to="/login" className="text-xl hover:text-blue-500">
+              <FiUser />
+            </Link>
+          )}
         </div>
 
         {/* Mobile Menu Toggle */}

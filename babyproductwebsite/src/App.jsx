@@ -14,6 +14,9 @@ import OrderConfirmationPage from './pages/OrderConfirmationPage';
 import OffersPage from './pages/OffersPage';
 import AboutUsPage from './pages/AboutUsPage';
 import SearchResultsPage from './pages/SearchResultsPage';
+import SignupPage from './pages/SignupPage';
+import LoginPage from './pages/LoginPage';
+import RequireAuth from './components/login/RequireAuth';
 
 function App() {
 
@@ -32,14 +35,16 @@ function App() {
             <Route path="/products/:category" element={<CategoryProductListPage/>} />
             <Route path="/product/:id" element={<ProductDescriptionPage />} />
             <Route path="/cart" element={<CartPage/>} />
-            <Route path="/checkout" element={<CheckOutPage/>} />
+            {/* <Route path="/checkout" element={<CheckOutPage/>} /> */}
+             <Route path="/checkout" element={<RequireAuth><CheckOutPage/></RequireAuth>} />
             <Route path="/contacts" element={<ContactPage/>} />
             <Route path="/order-confirmation" element={<OrderConfirmationPage />} />
             <Route path="/offers" element={<OffersPage/>} />
             <Route path="/about" element={<AboutUsPage/>} />
             <Route path="/search" element={<SearchResultsPage />} />
-
-        
+            <Route path="/signup" element={<SignupPage/>} />
+        <Route path="/login" element={<LoginPage/>} />
+    
           </Routes>
          
         </main>
